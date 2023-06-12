@@ -55,6 +55,12 @@ I see 5 comparisons among Bachelor, Graduate, High School, Junior College, LT Hi
 
 ### Numerical Descriptive Results
 
+```{r}
+favstats(WORDSUM~DEGREE,data=thedata)
+```
+
+The average score on the graduates is a little over 10. There is a sure difference between high school and graduates. You get clarification when you run via anova. Statistically you can see that Graduate and LT High School is a big difference.
+
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 ## Inferential Results
