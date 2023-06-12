@@ -11,8 +11,12 @@ output:
 require(knitr)
 require(tidyverse)
 require(tigerstats)
-
+thedata<-read.csv(file="GSScsv.csv")
 ```
+
+
+
+
 
 # Introduction
 
@@ -26,6 +30,9 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 
 <!--Mention that you intend to use chatGPT to the greatest extent possible. Give credit to chatGPT when you use it to create code in your report. Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
+First we wanted to find out what sore of data we had. We lean on writeout number 3 and I read the data and change the charaacter variables into factor variables and saw we had a numerical data which was wordsum and we now have a factor viaraibel called degreee. so we deducted that we have a numerical twitle categorical   
+  
+  
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
@@ -35,6 +42,16 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+ggplot(thedata, aes(x = DEGREE, y = WORDSUM)) +
+geom_boxplot(fill = "skyblue", color = "darkblue", outlier.shape = NA) +
+theme_minimal() +
+labs(x = "DEGREE", y = "WORDSUM") +
+theme(plot.title = element_text(hjust = 0.5)) +
+ggtitle("Fancy Box Plot")
+```
+I see 5 comparisons among Bachelor, Graduate, High School, Junior College, LT High School. Bachelor and Junior college  are at the same lines levels. LT High School is the lowest of them all. The second comparison is High school is right after LT High School.
 
 ### Numerical Descriptive Results
 
