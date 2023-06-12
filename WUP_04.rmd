@@ -106,4 +106,6 @@ There is a significance difference in statistical results between the schooling 
 
 # Discussion and Conclusion
 
+It is easy to look at Tukey HSD because Scheffe's.Test was a bit harder. I learned to ask chat GpT for another multiple comparisons. We also utilized our previous write up #3 to get data and formulas to work on the Write up #4. We tested many different possibilities and came to a conclusion that Tukey HSD is easier. I am learning to read data and create a simple way to interpret. In general of all the 5 grades  the most difference is between graduate and high school and graduate and LT High School. 
+
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
